@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manibharathi. M | Software Developer & Cybersecurity Enthusiast</title>
+  <meta name="description" content="Manibharathi. M — Software Developer | AI Developer | Cybersecurity Enthusiast | Chennai, India" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ───── LOADING SCREEN ───── -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">&lt;/&gt;</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Initializing...</p>
+    </div>
+  </div>
+
+  <!-- ───── NAVBAR ───── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo"><span class="gradient-text">&lt;MM /&gt;</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#achievements" class="mobile-link">Achievements</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ───── FLOATING SOCIAL SIDEBAR ───── -->
+  <aside class="social-sidebar">
+    <a href="https://linkedin.com/in/Yuantechprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/Manibharathi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://leetcode.com/u/Yuantechprofile" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+    <a href="mailto:manibharathi2k6@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <div class="sidebar-line"></div>
+  </aside>
+
+  <!-- ───── BACK TO TOP ───── -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 1 · HERO
+  ═══════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <!-- Profile Image -->
+      <div class="profile-wrapper reveal-left">
+        <div class="profile-ring">
+          <div class="profile-img-placeholder">
+            <i class="fas fa-user-astronaut"></i>
+          </div>
+          <!-- Replace above div with: <img src="your-photo.jpg" alt="Manibharathi. M" class="profile-photo" /> -->
+        </div>
+        <div class="profile-status"><span class="status-dot"></span> Open to Work</div>
+      </div>
+
+      <!-- Hero Text -->
+      <div class="hero-text reveal-right">
+        <p class="hero-greeting"><span class="wave">👋</span> Hello, I'm</p>
+        <h1 class="hero-name gradient-text">Manibharathi. M</h1>
+        <div class="typing-wrapper">
+          <span class="typing-prefix">$ </span>
+          <span id="typedText"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-bio">
+          Final-year <strong>Information Science &amp; Cyber Forensics</strong> student from Chennai, building
+          <strong>AI-powered applications</strong>, crafting full-stack web solutions, and diving deep into
+          <strong>cybersecurity &amp; digital forensics</strong>. Passionate about creating secure,
+          intelligent software that makes a real-world impact.
+          <span class="badge cyan">Chennai, India</span> &nbsp;·&nbsp;
+          <span class="badge purple">AI Developer</span> &nbsp;·&nbsp;
+          <span class="badge green">Cyber Forensics</span>
+        </p>
+        <div class="hero-buttons">
+          <a href="Manibharathi_resume.pdf" download class="btn-primary"><i class="fas fa-download"></i> Download CV</a>
+          <a href="#contact" class="btn-secondary">Let's Talk <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/Yuantechprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Manibharathi" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://leetcode.com/u/Yuantechprofile" target="_blank"><i class="fas fa-code"></i></a>
+          <a href="https://codeforces.com/profile/Yuantechprofile" target="_blank"><i class="fas fa-trophy"></i></a>
+          <a href="mailto:manibharathi2k6@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll down</span>
+      <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 2 · ABOUT
+  ═══════════════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// who_am_i</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            I'm <strong>Manibharathi. M</strong>, a final-year <strong>B.Sc Information Science &amp; Cyber Forensics</strong>
+            student at Dr. M.G.R. Educational And Research Institute, Chennai. I'm passionate about crafting
+            intelligent, secure, and impactful digital solutions at the intersection of <strong>AI, web development,
+            and cybersecurity</strong>.
+          </p>
+          <p>
+            My journey spans <strong>full-stack web development</strong>, <strong>AI &amp; ML application building</strong>,
+            and hands-on exploration of <strong>cyber forensics and ethical hacking</strong> — from vulnerability analysis
+            and threat detection to building secure backend systems with Python and Flask.
+          </p>
+          <p>
+            My <strong>career goal</strong> is to become a well-rounded tech professional who bridges the gap between
+            intelligent software and digital security. I believe the best systems are not just functional —
+            they are <strong>smart, fast, and inherently secure</strong>.
+          </p>
+          <div class="about-passions">
+            <span class="passion-tag"><i class="fas fa-brain"></i> Artificial Intelligence</span>
+            <span class="passion-tag"><i class="fab fa-python"></i> Python</span>
+            <span class="passion-tag"><i class="fas fa-server"></i> Backend Engineering</span>
+            <span class="passion-tag"><i class="fas fa-shield-halved"></i> Cybersecurity</span>
+            <span class="passion-tag"><i class="fas fa-globe"></i> Web Development</span>
+            <span class="passion-tag"><i class="fas fa-microchip"></i> System Design</span>
+          </div>
+        </div>
+        <div class="about-stats reveal-right">
+          <div class="stat-card glass">
+            <div class="stat-icon cyan"><i class="fas fa-rocket"></i></div>
+            <div class="stat-number" data-count="10">0</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card glass">
+            <div class="stat-icon purple"><i class="fas fa-microchip"></i></div>
+            <div class="stat-number" data-count="20">0</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-card glass">
+            <div class="stat-icon green"><i class="fas fa-shield-halved"></i></div>
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card glass">
+            <div class="stat-icon orange"><i class="fas fa-mug-hot"></i></div>
+            <div class="stat-number" data-count="500">0</div>
+            <div class="stat-label">Hours of Coding</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 3 · SKILLS
+  ═══════════════════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// tech_stack</p>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-category glass reveal">
+          <h3 class="cat-title"><i class="fas fa-terminal cyan"></i> Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">C++</span><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div><span class="skill-pct">92%</span></div>
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-w="95"></div></div><span class="skill-pct">95%</span></div>
+            <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div><span class="skill-pct">85%</span></div>
+            <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div><span class="skill-pct">88%</span></div>
+            <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" data-w="87"></div></div><span class="skill-pct">87%</span></div>
+            <div class="skill-item"><span class="skill-name">Go</span><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div><span class="skill-pct">75%</span></div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category glass reveal">
+          <h3 class="cat-title"><i class="fas fa-palette purple"></i> Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">HTML</span><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div><span class="skill-pct">92%</span></div>
+            <div class="skill-item"><span class="skill-name">CSS</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div><span class="skill-pct">88%</span></div>
+            <div class="skill-item"><span class="skill-name">React</span><div class="skill-bar"><div class="skill-fill" data-w="82"></div></div><span class="skill-pct">82%</span></div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category glass reveal">
+          <h3 class="cat-title"><i class="fas fa-server green"></i> Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div><span class="skill-pct">85%</span></div>
+            <div class="skill-item"><span class="skill-name">Flask</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div><span class="skill-pct">88%</span></div>
+            <div class="skill-item"><span class="skill-name">Spring Boot</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div><span class="skill-pct">80%</span></div>
+            <div class="skill-item"><span class="skill-name">gRPC</span><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div><span class="skill-pct">78%</span></div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category glass reveal">
+          <h3 class="cat-title"><i class="fas fa-database orange"></i> Databases</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-w="87"></div></div><span class="skill-pct">87%</span></div>
+            <div class="skill-item"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div><span class="skill-pct">85%</span></div>
+            <div class="skill-item"><span class="skill-name">MongoDB</span><div class="skill-bar"><div class="skill-fill" data-w="82"></div></div><span class="skill-pct">82%</span></div>
+            <div class="skill-item"><span class="skill-name">Redis</span><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div><span class="skill-pct">78%</span></div>
+          </div>
+        </div>
+
+        <!-- DevOps & Cloud -->
+        <div class="skill-category glass reveal">
+          <h3 class="cat-title"><i class="fas fa-cloud cyan"></i> DevOps &amp; Cloud</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" data-w="84"></div></div><span class="skill-pct">84%</span></div>
+            <div class="skill-item"><span class="skill-name">Kubernetes</span><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div><span class="skill-pct">75%</span></div>
+            <div class="skill-item"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div><span class="skill-pct">78%</span></div>
+            <div class="skill-item"><span class="skill-name">Git / CI/CD</span><div class="skill-bar"><div class="skill-fill" data-w="93"></div></div><span class="skill-pct">93%</span></div>
+          </div>
+        </div>
+
+        <!-- CS Fundamentals -->
+        <div class="skill-category glass reveal">
+          <h3 class="cat-title"><i class="fas fa-brain purple"></i> CS Fundamentals</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Data Structures &amp; Algorithms</span><div class="skill-bar"><div class="skill-fill" data-w="96"></div></div><span class="skill-pct">96%</span></div>
+            <div class="skill-item"><span class="skill-name">Operating Systems</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div><span class="skill-pct">88%</span></div>
+            <div class="skill-item"><span class="skill-name">Computer Networks</span><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div><span class="skill-pct">85%</span></div>
+            <div class="skill-item"><span class="skill-name">DBMS</span><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div><span class="skill-pct">90%</span></div>
+            <div class="skill-item"><span class="skill-name">Machine Learning</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div><span class="skill-pct">80%</span></div>
+            <div class="skill-item"><span class="skill-name">Cybersecurity</span><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div><span class="skill-pct">75%</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 4 · PROJECTS
+  ═══════════════════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// my_builds</p>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass reveal">
+          <div class="project-banner" style="--c1:#00d4ff;--c2:#0ea5e9;">
+            <i class="fas fa-database project-icon"></i>
+            <div class="project-links-top">
+              <a href="https://github.com/Manibharathi/kvstore" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Distributed Key-Value Store</h3>
+            <p class="project-desc">Fault-tolerant, distributed key-value database implementing the Raft consensus algorithm for leader election and log replication across 5 nodes. Achieves 10,000+ writes/second with linearizable consistency.</p>
+            <div class="project-tech">
+              <span>C++</span><span>gRPC</span><span>Raft Consensus</span><span>Docker</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Manibharathi/kvstore" target="_blank" class="btn-sm cyan"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass reveal">
+          <div class="project-banner" style="--c1:#8b5cf6;--c2:#d946ef;">
+            <i class="fas fa-gavel project-icon"></i>
+            <div class="project-links-top">
+              <a href="https://github.com/Manibharathi/oj" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Competitive Programming Judge</h3>
+            <p class="project-desc">Online judge platform supporting 6 languages with secure sandboxed code execution via Docker isolation. Implements Redis + Celery submission queue supporting 500+ concurrent evaluations with &lt;2s latency.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Django</span><span>Docker</span><span>PostgreSQL</span><span>Redis</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Manibharathi/oj" target="_blank" class="btn-sm cyan"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass reveal">
+          <div class="project-banner" style="--c1:#10b981;--c2:#059669;">
+            <i class="fas fa-code project-icon"></i>
+            <div class="project-links-top">
+              <a href="https://github.com/Manibharathi/codepad" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Real-Time Collaborative Code Editor</h3>
+            <p class="project-desc">Multi-user code editor using Operational Transformation (OT) algorithm for conflict-free collaborative editing. Supports 50+ concurrent users per session with &lt;100ms sync latency. Handled 1,000+ concurrent users during load testing.</p>
+            <div class="project-tech">
+              <span>Node.js</span><span>WebSocket</span><span>React</span><span>MongoDB</span><span>AWS</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Manibharathi/codepad" target="_blank" class="btn-sm cyan"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass reveal">
+          <div class="project-banner" style="--c1:#f59e0b;--c2:#ef4444;">
+            <i class="fas fa-brain project-icon"></i>
+            <div class="project-links-top">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AI-Powered Resume Screening System</h3>
+            <p class="project-desc">Automated resume screening system using NLP and ML models to rank candidates by job relevance. Extracts key skills, experience, and qualifications using BERT embeddings and cosine similarity scoring.</p>
+            <div class="project-tech">
+              <span>Python</span><span>BERT</span><span>Flask</span><span>spaCy</span><span>React</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Manibharathi/ai-resume-screening" target="_blank" class="btn-sm cyan"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card glass reveal">
+          <div class="project-banner" style="--c1:#ef4444;--c2:#dc2626;">
+            <i class="fas fa-shield-halved project-icon"></i>
+            <div class="project-links-top">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Cybersecurity Threat Analyzer</h3>
+            <p class="project-desc">Real-time network threat detection system using ML anomaly detection on packet-level data. Identifies DDoS patterns, port scans, and SQL injection attempts with 94% accuracy on benchmark datasets.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Scapy</span><span>Scikit-learn</span><span>Elasticsearch</span><span>Kibana</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Manibharathi/cyber-threat-analyzer" target="_blank" class="btn-sm cyan"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card glass reveal">
+          <div class="project-banner" style="--c1:#6366f1;--c2:#8b5cf6;">
+            <i class="fas fa-heartbeat project-icon"></i>
+            <div class="project-links-top">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AI-Powered Disease Prediction System</h3>
+            <p class="project-desc">Multi-disease prediction platform using ensemble ML models (XGBoost, Random Forest, SVM) for early detection of diabetes, heart disease, and cancer from clinical parameters. Deployed with Flask REST API.</p>
+            <div class="project-tech">
+              <span>Python</span><span>XGBoost</span><span>Flask</span><span>Pandas</span><span>Streamlit</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Manibharathi/disease-prediction" target="_blank" class="btn-sm cyan"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 5 · EXPERIENCE
+  ═══════════════════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// work_history</p>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Entry 1 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot cyan"></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Software Engineering Intern</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> Company Name Inc., Chennai, India</p>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-date"><i class="fas fa-calendar"></i> May 2025 – Aug 2025</span>
+                <span class="tl-badge cyan">Internship</span>
+              </div>
+            </div>
+            <ul class="tl-achievements">
+              <li>Designed and implemented a distributed caching layer in <strong>C++ using Redis and gRPC</strong>, reducing API response latency by <strong>42%</strong> across 5M+ daily requests.</li>
+              <li>Built a scalable microservice in <strong>Go</strong> to process event streams; handled <strong>100K events/second</strong> with a 99.9% uptime SLA.</li>
+              <li>Optimized a graph traversal algorithm from <strong>O(V²) to O(V + E)</strong> using BFS and adjacency lists, improving runtime by 85% on production workloads.</li>
+              <li>Collaborated with a team of 6 engineers using Git, Code Reviews, and Agile/Scrum; shipped 12+ features to production.</li>
+              <li>Achieved <strong>95% code coverage</strong> with comprehensive unit and integration tests; integrated into CI/CD pipeline via Jenkins.</li>
+            </ul>
+            <div class="tl-tech">
+              <span>C++</span><span>Go</span><span>Redis</span><span>gRPC</span><span>Kubernetes</span><span>Jenkins</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 2 -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot purple"></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Software Developer Intern</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> Startup Name, Chennai, India</p>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-date"><i class="fas fa-calendar"></i> Dec 2024 – Feb 2025</span>
+                <span class="tl-badge purple">Internship</span>
+              </div>
+            </div>
+            <ul class="tl-achievements">
+              <li>Developed <strong>REST APIs</strong> in Python (Flask) and PostgreSQL serving <strong>10K+ daily active users</strong>.</li>
+              <li>Reduced database query time by <strong>60%</strong> through indexing strategies and query optimization on 5M+ row tables.</li>
+              <li>Implemented <strong>JWT-based authentication</strong> and role-based access control, enhancing API security.</li>
+              <li>Containerized services using <strong>Docker</strong> and deployed on <strong>AWS EC2</strong>, automating deployment with GitHub Actions.</li>
+            </ul>
+            <div class="tl-tech">
+              <span>Python</span><span>Flask</span><span>PostgreSQL</span><span>Docker</span><span>AWS</span><span>JWT</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 6 · EDUCATION
+  ═══════════════════════════════════════════════════════ -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// academics</p>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="education-card glass reveal">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-details">
+          <h3 class="edu-degree">B.Sc Information Science &amp; Cyber Forensics</h3>
+          <p class="edu-uni"><i class="fas fa-university"></i> Dr. M.G.R. Educational And Research Institute, Chennai, Tamil Nadu</p>
+          <div class="edu-meta">
+            <span><i class="fas fa-calendar"></i> 2022 – Expected May 2026</span>
+            <span class="gpa-badge">GPA: 9.2 / 10.0</span>
+          </div>
+          <div class="edu-courses">
+            <p class="courses-label">Relevant Coursework:</p>
+            <div class="courses-tags">
+              <span>Cyber Forensics</span>
+              <span>Ethical Hacking</span>
+              <span>Network Security</span>
+              <span>Database Management</span>
+              <span>Computer Networks</span>
+              <span>Operating Systems</span>
+              <span>Python Programming</span>
+              <span>Machine Learning</span>
+              <span>Web Technologies</span>
+              <span>Information Security</span>
+              <span>Digital Forensics</span>
+              <span>Data Structures</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 7 · ACHIEVEMENTS & CERTIFICATIONS
+  ═══════════════════════════════════════════════════════ -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// honors_&_certs</p>
+        <h2 class="section-title">Achievements &amp; <span class="gradient-text">Certifications</span></h2>
+      </div>
+
+      <h3 class="sub-heading reveal"><i class="fas fa-trophy"></i> Achievements</h3>
+      <div class="achievements-grid">
+
+        <div class="achievement-card glass reveal">
+          <div class="ach-icon" style="--ach:#00d4ff;"><i class="fas fa-bolt"></i></div>
+          <h4>Codeforces Expert</h4>
+          <p>Max rating <strong>1723</strong> · Top 5% globally · 600+ problems solved</p>
+        </div>
+
+        <div class="achievement-card glass reveal">
+          <div class="ach-icon" style="--ach:#8b5cf6;"><i class="fas fa-star"></i></div>
+          <h4>LeetCode Knight</h4>
+          <p>Max rating <strong>2014</strong> · Top 4% globally · 200+ hard problems</p>
+        </div>
+
+        <div class="achievement-card glass reveal">
+          <div class="ach-icon" style="--ach:#10b981;"><i class="fas fa-globe"></i></div>
+          <h4>ACM ICPC Regionalist</h4>
+          <p>Top <strong>50 teams</strong> out of 3,000+ at ACM ICPC Asia Regional 2024</p>
+        </div>
+
+        <div class="achievement-card glass reveal">
+          <div class="ach-icon" style="--ach:#f59e0b;"><i class="fab fa-google"></i></div>
+          <h4>Google Kick Start 2024</h4>
+          <p>Top <strong>200 globally</strong> (Round C) · Advanced to final round</p>
+        </div>
+
+        <div class="achievement-card glass reveal">
+          <div class="ach-icon" style="--ach:#ef4444;"><i class="fas fa-fire"></i></div>
+          <h4>Hackathon Winner 🥇</h4>
+          <p><strong>1st place</strong> out of 120 teams at XYZ National Hackathon 2024</p>
+        </div>
+
+        <div class="achievement-card glass reveal">
+          <div class="ach-icon" style="--ach:#6366f1;"><i class="fas fa-medal"></i></div>
+          <h4>Dean's List</h4>
+          <p>Top <strong>5%</strong> of graduating class · 6 consecutive semesters</p>
+        </div>
+
+        <div class="achievement-card glass reveal">
+          <div class="ach-icon" style="--ach:#ec4899;"><i class="fas fa-users"></i></div>
+          <h4>Coding Club President</h4>
+          <p>Led team of 15 · 4 national contests · 2,500+ participants · 180% membership growth</p>
+        </div>
+
+        <div class="achievement-card glass reveal">
+          <div class="ach-icon" style="--ach:#14b8a6;"><i class="fab fa-github"></i></div>
+          <h4>Open Source Contributor</h4>
+          <p>3 projects · <strong>5,000+</strong> combined GitHub stars · 8 merged PRs</p>
+        </div>
+
+      </div>
+
+      <h3 class="sub-heading reveal" style="margin-top:3rem;"><i class="fas fa-certificate"></i> Certifications</h3>
+      <div class="certs-grid">
+
+        <div class="cert-card glass reveal">
+          <div class="cert-logo aws"><i class="fab fa-aws"></i></div>
+          <div class="cert-info">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p>Amazon Web Services · 2024</p>
+            <span class="cert-badge">Cloud</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal">
+          <div class="cert-logo gcp"><i class="fab fa-google"></i></div>
+          <div class="cert-info">
+            <h4>Google Cloud Professional Data Engineer</h4>
+            <p>Google Cloud · 2024</p>
+            <span class="cert-badge">Cloud</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal">
+          <div class="cert-logo sec"><i class="fas fa-shield-halved"></i></div>
+          <div class="cert-info">
+            <h4>Certified Ethical Hacker (CEH)</h4>
+            <p>EC-Council · 2024</p>
+            <span class="cert-badge">Security</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal">
+          <div class="cert-logo ml"><i class="fas fa-robot"></i></div>
+          <div class="cert-info">
+            <h4>Machine Learning Specialization</h4>
+            <p>Stanford University / Coursera · 2023</p>
+            <span class="cert-badge">AI/ML</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 8 · CONTACT
+  ═══════════════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// get_in_touch</p>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-sub">Have a project in mind, a job opportunity, or just want to connect? Drop a message!</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal-left">
+          <div class="contact-item glass">
+            <div class="ci-icon cyan"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="ci-label">Email</p>
+              <a href="mailto:manibharathi2k6@gmail.com" class="ci-value">manibharathi2k6@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <div class="ci-icon purple"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="ci-label">Phone</p>
+              <a href="tel:+918667531761" class="ci-value">+91 8667531761</a>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <div class="ci-icon green"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <p class="ci-label">Location</p>
+              <p class="ci-value">Chennai, India</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/Yuantechprofile" target="_blank" class="cs-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Manibharathi" target="_blank" class="cs-link"><i class="fab fa-github"></i></a>
+            <a href="https://leetcode.com/u/Yuantechprofile" target="_blank" class="cs-link"><i class="fas fa-code"></i></a>
+            <a href="https://codeforces.com/profile/Yuantechprofile" target="_blank" class="cs-link"><i class="fas fa-trophy"></i></a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form glass reveal-right" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Job Opportunity / Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo gradient-text">&lt;MM /&gt;</p>
+      <p class="footer-copy">Designed &amp; Built by <strong>Manibharathi. M</strong> · &copy; <span id="year"></span></p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/Yuantechprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Manibharathi" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/u/Yuantechprofile" target="_blank"><i class="fas fa-code"></i></a>
+        <a href="mailto:manibharathi2k6@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
